@@ -1,0 +1,157 @@
+
+/* Big tablet to 1200px (widths smaller that of the 1140px row)*/
+@media only screen and (max-width: 1200px)
+{
+  .form-box
+  {
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .sign-up input
+  {
+    width: 100%;
+    font-size: 150%;
+    margin-bottom: 6px;
+  }
+
+  .sign-up a
+  {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .row
+  { padding: 0 2%; }
+
+  .social-links li
+  {
+    padding: 10px 80px;
+  }
+
+
+}
+
+/* Small tablet to big tablet (from 768px to 1023px)*/
+@media only screen and (max-width: 1023px)
+{
+
+  body { font-size:  18px; }
+
+  section { padding: 60px 0; }
+
+
+  h1
+  {
+    font-size: 170%;
+    width: 98%;
+  }
+
+  .main-nav li { margin-left: 10px; }
+
+  .resources-box
+  {
+    height: 250px;
+  }
+
+  .social-links li
+  {
+    padding: 10px 50px;
+  }
+
+
+}
+
+/* Small phones to small tables (from 481px to 767px)*/
+@media only screen and (max-width: 767px)
+{
+  section { padding: 50px 0; }
+
+  .logo { height: 150px; }
+
+  .main-nav
+  {
+    display: none;
+  }
+
+  .mobile-nav-icon
+  {
+    display: inline-block;
+  }
+
+  .main-nav
+  {
+    float: left;
+    margin-right: 300px;
+    margin-top: 9px;
+  }
+
+  .main-nav li
+  {
+    display: block;
+  }
+
+  .main-nav li a:link,
+  .main-nav li a:visited
+  {
+    display: block;
+    border: 0;
+    padding: 5px 0;
+    font-size: 100%;
+  }
+
+
+  .sticky .main-nav
+  {
+    margin-top: 10px;
+  }
+
+  .sticky .main-nav li a:link,
+  .sticky .main-nav li a:visited
+  {
+    padding: 5px 0px;
+  }
+
+  .sticky .mobile-nav-icon i
+  {
+    color: #555;
+  }
+
+  h1
+  {
+    font-size: 120%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .resources-box
+  {
+    padding: 40px;
+    margin-bottom: 10px;
+  }
+
+  .social-links li a:link,
+  .social-links li a:visited
+  {
+    font-size: 350%;
+    padding: 5px 5px;
+  }
+
+  footer h3
+  {
+    font-size: 160%;
+  }
+
+
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px)
+{
+
+  footer h3
+  {
+    font-size: 120%;
+  }
+
+}

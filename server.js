@@ -13,7 +13,8 @@ app.use(express.static(__dirname + '/public')); //let express use /public folder
 
 app.get('/', (req, res) => {
   res.render('home.hbs', {
-    
+    creator: 'Jassem Al-Buloushi',
+    date: new Date().getFullYear()
   });
 });
 

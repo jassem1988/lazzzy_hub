@@ -32,8 +32,22 @@ app.get('/nodejs', (req, res) => {
   });
 });
 
+app.get('/expressjs', (req, res) => {
+  res.render('expressjs.hbs', {
+    creator: 'Jassem Al-Buloushi',
+    date: new Date().getFullYear()
+  });
+});
+
 app.get('/npm', (req, res) => {
   res.render('npm.hbs', {
+    creator: 'Jassem Al-Buloushi',
+    date: new Date().getFullYear()
+  });
+});
+
+app.get('/mongodb', (req, res) => {
+  res.render('mongodb.hbs', {
     creator: 'Jassem Al-Buloushi',
     date: new Date().getFullYear()
   });

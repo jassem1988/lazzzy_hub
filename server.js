@@ -18,6 +18,13 @@ app.get('/', (req, res) => {
   });
 });
 
+app.get('/landing', (req, res) => {
+  res.render('landing.hbs', {
+    creator: 'Jassem Al-Buloushi',
+    date: new Date().getFullYear()
+  });
+});
+
 
 
 app.listen(port, () => {

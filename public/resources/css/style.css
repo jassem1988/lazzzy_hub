@@ -335,10 +335,15 @@ nav
   margin-top: 40px;
 }
 
+/* .landing-nav {
+  margin-bottom: 10px;
+} */
+
 .main-nav li
 {
   display: inline-block;
   margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .main-nav li a:link, .main-nav li a:visited

@@ -11,14 +11,14 @@ app.set('view engine', 'hbs'); // Set express to use hbs in the views dir
 
 app.use(express.static(__dirname + '/public')); //let express use /public folder
 
-app.get('/', (req, res) => {
-  res.render('home.hbs', {
-    creator: 'Jassem Al-Buloushi',
-    date: new Date().getFullYear()
-  });
-});
+// app.get('/', (req, res) => {
+//   res.render('home.hbs', {
+//     creator: 'Jassem Al-Buloushi',
+//     date: new Date().getFullYear()
+//   });
+// });
 
-app.get('/landing', (req, res) => {
+app.get('/', (req, res) => {
   res.render('landing.hbs', {
     creator: 'Jassem Al-Buloushi',
     date: new Date().getFullYear()

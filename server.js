@@ -2,7 +2,7 @@
 const express = require('express'),
       hbs     = require('hbs');
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 
 var app = express();
 

@@ -5,9 +5,22 @@ MongoClient.connect('mongodb://localhost:27017/LazzzyHub', { useNewUrlParser: tr
     return console.log('Unable to connect to Mongodb server');
   }
   console.log('Connected to Mongodb Server');
-  const db = db.client('LazzzyHub');
+  const db = client.db('LazzzyHub');
 
+  // db.collection('Resources').insertOne({
+  //   section: 'npm',
+  //   header: 'npm',
+  //   logoImg: 'https://authy.com/wp-content/uploads/npm-logo.png',
+  //   link: 'https://www.npmjs.com/',
+  //   description: 'Npm is the package manager for JavaScript and the world’s largest software registry.'
+  // },(error, result) => {
+  //   if(error) {
+  //     return console.log('Unable to insert resource');
+  //   }
+  //   console.log(JSON.stringify(result.ops, undefined, 2));
+  // });
 
+  db.collection('')
 
   client.close();
 });

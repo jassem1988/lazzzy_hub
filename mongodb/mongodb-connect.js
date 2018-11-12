@@ -20,7 +20,18 @@ MongoClient.connect('mongodb://localhost:27017/LazzzyHub', { useNewUrlParser: tr
   //   console.log(JSON.stringify(result.ops, undefined, 2));
   // });
 
-  db.collection('')
+  db.collection('Resources').insertOne({
+    section: 'npm',
+    header: 'body-parser',
+    logoImg: 'https://authy.com/wp-content/uploads/npm-logo.png',
+    link: 'https://www.npmjs.com/package/body-parser',
+    description: 'It Parses incoming request bodies in a middleware before your handlers, available under the req.body property.'
+  }, (error, result) => {
+    if(error) {
+      return console.log('Unable to insert resource');
+    }
+    console.log(JSON.stringify(result.ops, undefined, 2));
+  });
 
   client.close();
 });
